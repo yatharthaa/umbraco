@@ -1,0 +1,105 @@
+header {
+    margin-bottom: 20px;
+
+    .navbar {
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        position: relative;
+
+        .nav-menu {
+            display: flex;
+            justify-content: flex-start;
+            -webkit-align-items: center;
+            align-items: center;
+            width: 70%;
+
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 20px;
+                font-size: 15px;
+                color: $color-body;
+            }
+
+            .site-title {
+                a {
+                    font-size: 26px;
+                    font-weight: 700;
+                }
+            }
+
+            .site-nav {
+                display: flex;
+
+                li {
+                    .sub-menu {
+                        display: none;
+                        width: 95%;
+                        position: absolute;
+                        top: 86%;
+                        padding: 40px;
+                        box-shadow: 4px 5px 12px -1px #696969;
+                        background: #fff;
+                        z-index: 50;
+                        left: 0;
+                    }
+
+                    &:hover {
+                        .sub-menu {
+                            display: block;
+                            h2 {
+                                font-size: 18px;
+                                margin-bottom: 20px;
+                                padding-left: 20px;
+                            }
+                            
+                            .sub-menu-list {
+                                grid-gap: 15px;
+                                .sub-menu-list-grid {
+                                    padding: 20px;
+                                    &:hover {
+                                        background: #f9f7f4;
+                                    }
+                                    h3 {
+                                        font-size: 16px;
+                                        color: $color-main;
+                                        margin-bottom: 10px;
+                                    }
+                                    p {
+                                        font-size: 16px;
+                                        margin-bottom: 15px;
+                                    }
+                                    a {
+                                        padding: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .register {
+            width: 30%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 20px;
+                font-size: 15px;
+            }
+        }
+
+        .try-free {
+            a {
+                @include btn;
+                font-size: 15px;
+            }
+        }
+    }
+}

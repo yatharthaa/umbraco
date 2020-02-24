@@ -1,0 +1,36 @@
+.umbraco-alignment {
+	margin-bottom: 90px;
+	.ual {
+		max-width: 1200px;
+		margin: 0 auto;
+		margin-bottom: 120px;
+	}
+	.umbraco-first-alignment-info {
+		h2 {
+			font-size: 45px;
+			margin-bottom: 30px;
+			line-height: 1.3;
+		}
+		p {
+			margin-bottom: 18px;
+		}
+		a {
+			@include btn;
+		}
+		ul {
+			margin-top: 15px;
+			padding-left: 40px;
+			li {
+				list-style-type: disc;
+			}
+		}
+	}
+	.umbraco-secound-alignment {
+		.umbraco-first-alignment-img {
+			order: 2;
+		}
+		.umbraco-first-alignment-info {
+			order: 1;
+		}
+	}
+}

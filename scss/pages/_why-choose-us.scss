@@ -1,0 +1,60 @@
+.wcu {
+    background: transparent;
+
+    .why-chooseus-list-info {
+        a {
+            @include btn;
+        }
+    }
+}
+
+.tabs {
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background: #283344;
+
+    li {
+        a {
+            display: block;
+            color: #F9F7F4;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 20px;
+            text-decoration: none;
+
+            &:hover {
+                background: #3d4b61;
+            }
+        }
+    }
+}
+
+.inner-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)), url("../images/inner-banner.png");
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 120px 0;
+    text-align: center;
+    color: #FFF;
+
+    h3 {
+        font-size: 54px;
+        font-weight: 900;
+    }
+
+    p {
+        margin-top: 15px;
+    }
+}
+
+.wcu-a {
+    .umbraco-first-alignment-info {
+        a {
+            @include btn-border;
+        }
+    }
+}

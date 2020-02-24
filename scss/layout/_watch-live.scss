@@ -1,0 +1,21 @@
+.watch-live {
+    background-image: url("../images/watch-live.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 90px 0;
+    margin-bottom: 90px;
+
+    .watch-live-title {
+        text-align: center;
+        @include page-title;
+    }
+
+    .btn {
+        text-align: center;
+
+        a {
+            @include btn-border;
+        }
+    }
+}

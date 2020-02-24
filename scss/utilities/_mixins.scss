@@ -1,0 +1,84 @@
+// page-title
+@mixin page-title {
+    h2 {
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+}
+
+// btn
+@mixin btn {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border: 2px solid transparent;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 3px;
+    transition: all .2s ease-out;
+    box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.1);
+    line-height: 1.55;
+    background: $color-main;
+    color: #FFF;
+    text-decoration: none;
+    &:hover {
+        background: lighten($color-main, 10%);
+    }
+}
+
+@mixin btn-border {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border: 2px solid $color-main;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 3px;
+    transition: all .2s ease-out;
+    box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.1);
+    line-height: 1.55;
+    background: transparent;
+    color: $color-main;
+    text-decoration: none;
+    &:hover {
+        background: $color-main;
+        color: #FFF;
+    }
+}
+
+// 
+@mixin for-size($size) {
+    @if $size==phone-only {
+        @media (max-width: 500px) {
+            @content;
+        }
+    }
+
+    @else if $size==tablet-portrait-up {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $size==tablet-landscape-up {
+        @media (max-width: 991px) {
+            @content;
+        }
+    }
+
+    @else if $size==desktop-up {
+        @media (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if $size==big-desktop-up {
+        @media only screen and (min-width: 1200px) and (max-width: 1300px) {
+            @content;
+        }
+    }
+}

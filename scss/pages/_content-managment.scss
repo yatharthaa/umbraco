@@ -1,0 +1,25 @@
+.manage-content {
+	h2 {
+		font-size: 27px;
+		margin-bottom: 15px;
+	}
+	p {
+		margin-bottom: 60px;
+	}
+}
+
+.two-bundle {
+	margin-bottom: 90px;
+	.two-bundle-grid {
+		h2 {
+			font-size: 22px;
+			margin-bottom: 15px;
+		}
+		p {
+			margin-bottom: 30px;
+		}
+		a {
+			@include btn;
+		}
+	}
+}

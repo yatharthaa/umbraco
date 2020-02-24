@@ -1,0 +1,158 @@
+.cta {
+    background: $color-main;
+    padding: 90px;
+    margin-bottom: 90px;
+
+    .cta-description {
+        color: #FFF;
+
+        h3 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    .cta-count {
+        color: #FFF;
+        margin-left: 110px;
+
+        .cta-count-detail {
+            h2 {
+                font-size: 54px;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+.newsletter-subscribe {
+    margin-bottom: 90px;
+
+    h2,
+    p {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    form {
+        width: 50%;
+        margin: auto;
+        margin-top: 35px;
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 18px 25px;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .btn {
+            @include btn;
+            width: 100%;
+        }
+    }
+}
+
+
+footer {
+    background-color: rgb(249, 247, 244);
+    padding: 90px;
+
+    ul {
+        li {
+            h3 {
+                font-size: 22px;
+                margin-bottom: 18px;
+            }
+
+            a {
+                font-size: 16px;
+                color: #8A8A8A;
+                text-decoration: none;
+
+                &:hover {
+                    color: $color-main;
+                }
+            }
+        }
+
+        li:not(:last-child) {
+            margin-bottom: 14px;
+        }
+
+        .footer-links {
+            ul {
+                li {
+                    position: relative;
+                    margin-left: 30px;
+
+                    &::before {
+                        font-size: 16px;
+                        color: $color-main;
+                        transform: translate(0, -36%);
+                        position: absolute;
+                        top: 50%;
+                        left: -30px;
+                        font-weight: 900;
+                        font-family: "Font Awesome 5 Brands";
+                    }
+                }
+
+                li.community {
+                    &::before {
+                    	font-family: "Font Awesome 5 Free";
+                        content: "\f004";
+                    }
+                }
+
+                li.umtv {
+                    &::before {
+                    	font-family: "Font Awesome 5 Free";
+                        content: "\f04b";
+                    }
+                }
+
+                li.umgit {
+                    &::before {
+                        content: "\f09b";
+                    }
+                }
+
+                li.blog {
+                    &::before {
+                    	font-family: "Font Awesome 5 Free";
+                        content: "\f004";
+                    }
+                }
+
+                li.facebook {
+                    &::before {
+                        content: "\f39e";
+                    }
+                }
+
+                li.twitter {
+                    &::before {
+                        content: "\f099";
+                    }
+                }
+                li.insta {
+                    &::before {
+                        content: "\f16d";
+                    }
+                }
+            }
+        }
+    }
+}
